@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xếp Hạng Coder Siêng Năng</title>
+        <link rel="stylesheet" href="xep-hang.css">
+</head>
+<body>
+    <header>
+        <h1>Xếp Hạng Coder Siêng Năng</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Trang_Web_Chinh.html">Trang chủ</a></li>
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="tai-lieu.html">Tài liệu</a></li>
+            <li><a href="hoat-dong.html">Hoạt động</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Bảng xếp hạng coder</h2>
+            <p>Nhập tên coder và số giờ làm việc để thêm vào bảng xếp hạng!</p>
+            <div class="input-form">
+                <input type="text" id="coderName" placeholder="Tên coder" />
+                <input type="number" id="hoursWorked" placeholder="Số giờ làm việc" />
+                <button id="addCoder">Thêm vào danh sách</button>
+            </div>
+            <div class="ranking">
+                <h3>Danh sách:</h3>
+                <ul id="coderList">
+                    <li>
+                        <span>1. Nguyễn Văn A</span><span>120 giờ</span>
+                        <button class="delete-btn">Xóa</button>
+                    </li>
+                    <li>
+                        <span>2. Trần Thị B</span><span>115 giờ</span>
+                        <button class="delete-btn">Xóa</button>
+                    </li>
+                    <li>
+                        <span>3. Lê Văn C</span><span>100 giờ</span>
+                        <button class="delete-btn">Xóa</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Trang Hỗ Trợ Giảng Dạy Lập Trình Cơ Bản</p>
+    </footer>
+    <script src="xep-hang.js"></script>
+</body>
+</html>

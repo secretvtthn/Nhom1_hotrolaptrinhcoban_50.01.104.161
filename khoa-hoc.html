@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Hỗ Trợ Giảng Dạy Lập Trình Cơ Bản</title>
+    <link rel="stylesheet" href="khoa-hoc.css"> <!-- Liên kết tới tệp CSS -->
+</head>
+<body>
+    <header>
+        <h1>Khóa học cho sinh viên</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Trang_Web_Chinh.html">Trang chủ</a></li>
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="tai-lieu.html">Tài liệu</a></li>
+            <li><a href="hoat-dong.html">Hoạt động</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Khóa học miễn phí</h2>
+        <div class="courses">
+            <div class="course">
+                <img src="images/kienthuc.png" alt="Foundation">
+                <h3>Kiến Thức Nền Tảng</h3>
+                <p>Khóa học nhập môn IT.</p>
+                <a href="#" onclick="openModal('course1')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/cpp.png" alt="C Programming">
+                <h3>Từ Cơ Bản Đến Nâng Cao</h3>
+                <p>Lập trình C++ cơ bản đến nâng cao miễn phí.</p>
+                <a href="#" onclick="openModal('course2')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/html.png" alt="HTML CSS">
+                <h3>HTML, CSS</h3>
+                <p>Học HTML CSS từ Zero đến Hero.</p>
+                <a href="#" onclick="openModal('course3')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/responsive.png" alt="Responsive Design">
+                <h3>Responsive</h3>
+                <p>Responsive với Grid System.</p>
+                <a href="#" onclick="openModal('course4')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/javascript.png" alt="JavaScript (Basic)">
+                <h3>JavaScript (Cơ Bản)</h3>
+                <p>Khóa học JavaScript cơ bản.</p>
+                <a href="#" onclick="openModal('course5')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/jvnc.png" alt="JavaScript Advanced">
+                <h3>JavaScript (Nâng Cao)</h3>
+                <p>Học JavaScript nâng cao.</p>
+                <a href="#" onclick="openModal('course6')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/wsl.png" alt="WSL Ubuntu">
+                <h3>WSL Ubuntu</h3>
+                <p>Hướng dẫn sử dụng Windows Terminal.</p>
+                <a href="#" onclick="openModal('course7')">Chi tiết</a>
+            </div>
+            <div class="course">
+                <img src="images/js.png" alt="React JS">
+                <h3>React JS</h3>
+                <p>Xây dựng website với ReactJS.</p>
+                <a href="#" onclick="openModal('course8')">Chi tiết</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="course1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course1')">&times;</span>
+            <h2>Kiến Thức Nền Tảng</h2>
+            <p>Khóa học này sẽ giúp bạn hiểu rõ các khái niệm cơ bản về CNTT, từ cấu trúc dữ liệu đến các nguyên lý lập trình cơ bản.</p>
+        </div>
+    </div>
+    <div id="course2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course2')">&times;</span>
+            <h2>Từ Cơ Bản Đến Nâng Cao</h2>
+            <p>Khóa học này giúp bạn nắm vững lập trình C++ từ cơ bản đến nâng cao, với các bài tập thực hành phong phú.</p>
+        </div>
+    </div>
+    <div id="course3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course3')">&times;</span>
+            <h2>HTML, CSS</h2>
+            <p>Khóa học này sẽ giúp bạn học từ những kiến thức cơ bản về HTML và CSS cho đến khi có thể tạo ra những trang web đẹp mắt.</p>
+        </div>
+    </div>
+    <div id="course4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course4')">&times;</span>
+            <h2>Responsive</h2>
+            <p>Khóa học này giúp bạn hiểu và áp dụng responsive design, làm cho trang web hiển thị tốt trên mọi thiết bị.</p>
+        </div>
+    </div>
+    <div id="course5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course5')">&times;</span>
+            <h2>JavaScript (Cơ Bản)</h2>
+            <p>Khóa học này giúp bạn làm quen với JavaScript cơ bản, các khái niệm như biến, hàm, vòng lặp và điều kiện.</p>
+        </div>
+    </div>
+    <div id="course6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course6')">&times;</span>
+            <h2>JavaScript (Nâng Cao)</h2>
+            <p>Khóa học nâng cao JavaScript sẽ giúp bạn hiểu các khái niệm như closure, promises và async/await.</p>
+        </div>
+    </div>
+    <div id="course7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course7')">&times;</span>
+            <h2>WSL Ubuntu</h2>
+            <p>Khóa học này hướng dẫn sử dụng WSL và Ubuntu trên Windows, giúp bạn làm quen với môi trường phát triển Linux trên Windows.</p>
+        </div>
+    </div>
+    <div id="course8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('course8')">&times;</span>
+            <h2>React JS</h2>
+            <p>Khóa học này sẽ giúp bạn xây dựng các ứng dụng web hiện đại bằng ReactJS, một thư viện JavaScript phổ biến.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Trang Hỗ Trợ Giảng Dạy Lập Trình Cơ Bản</p>
+    </footer>
+
+    <script src="khoa-hoc.js"></script>
+</body>
+</html>

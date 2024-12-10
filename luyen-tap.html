@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập Coder</title>
+    <link rel="stylesheet" href="luyen-tap.css">
+</head>
+<body>
+    <header>
+        <h1>Luyện Tập Coder</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Trang_Web_Chinh.html">Trang chủ</a></li>
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="tai-lieu.html">Tài liệu</a></li>
+            <li><a href="hoat-dong.html">Hoạt động</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm bài tập...">
+        <button onclick="searchExercises()">Tìm kiếm</button>
+    </div>
+
+    <div class="container">
+        <h2>Bài Tập Luyện Tập</h2>
+
+        <!-- Các nút môn học -->
+        <div class="subject-btns">
+            <button class="subject-btn" onclick="filterExercises('Cấu trúc dữ liệu')">Cấu trúc dữ liệu</button>
+            <button class="subject-btn" onclick="filterExercises('Thuật toán')">Thuật toán</button>
+            <button class="subject-btn" onclick="filterExercises('Lập trình C')">Lập trình C</button>
+            <button class="subject-btn" onclick="filterExercises('Lập trình Python')">Lập trình Python</button>
+            <button class="subject-btn" onclick="filterExercises('HTML')">HTML</button>
+            <button class="subject-btn" onclick="filterExercises('JavaScript')">JavaScript</button>
+        </div>
+
+        <div class="exercise-list" id="exerciseList">
+            <h2>Bài Tập</h2>
+
+            <!-- Cấu trúc dữ liệu -->
+            <div class="exercise cpp-exercise" data-subject="Cấu trúc dữ liệu">
+                <h3>Cấu trúc dữ liệu: Danh sách liên kết</h3>
+                <p>Viết chương trình quản lý danh sách liên kết đơn giản.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+            <div class="exercise cpp-exercise" data-subject="Cấu trúc dữ liệu">
+                <h3>Cấu trúc dữ liệu: Ngăn xếp</h3>
+                <p>Viết chương trình mô phỏng ngăn xếp trong C hoặc Python.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+
+            <!-- Thuật toán -->
+            <div class="exercise algorithm-exercise" data-subject="Thuật toán">
+                <h3>Thuật toán: Tìm kiếm nhị phân</h3>
+                <p>Viết thuật toán tìm kiếm nhị phân trong mảng đã sắp xếp.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+            <div class="exercise algorithm-exercise" data-subject="Thuật toán">
+                <h3>Thuật toán: Sắp xếp nổi bọt (Bubble Sort)</h3>
+                <p>Viết thuật toán sắp xếp mảng bằng Bubble Sort trong JavaScript hoặc C.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+
+            <!-- Lập trình C -->
+            <div class="exercise cpp-exercise" data-subject="Lập trình C">
+                <h3>Lập trình C: Quản lý mảng</h3>
+                <p>Viết chương trình quản lý mảng trong C, hỗ trợ thêm, xóa phần tử.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+            <div class="exercise cpp-exercise" data-subject="Lập trình C">
+                <h3>Lập trình C: Tính tổng mảng</h3>
+                <p>Viết chương trình tính tổng các phần tử trong mảng C.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+
+            <!-- Lập trình Python -->
+            <div class="exercise python-exercise" data-subject="Lập trình Python">
+                <h3>Lập trình Python: Quản lý danh bạ</h3>
+                <p>Viết chương trình quản lý danh bạ trong Python.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+            <div class="exercise python-exercise" data-subject="Lập trình Python">
+                <h3>Lập trình Python: Tính toán tổng hợp</h3>
+                <p>Viết chương trình tính toán tổng các số chẵn trong một danh sách Python.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="exercise js-exercise" data-subject="JavaScript">
+                <h3>JavaScript: Tạo trang web động</h3>
+                <p>Viết mã JavaScript để thay đổi nội dung trang web động.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+            <div class="exercise js-exercise" data-subject="JavaScript">
+                <h3>JavaScript: Xử lý sự kiện</h3>
+                <p>Viết chương trình JavaScript xử lý sự kiện khi người dùng click vào nút.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+
+            <!-- HTML -->
+            <div class="exercise html-exercise" data-subject="HTML">
+                <h3>HTML: Tạo trang web đơn giản</h3>
+                <p>Viết một trang web đơn giản với HTML, bao gồm các phần tiêu đề, nội dung và ảnh.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+            <div class="exercise html-exercise" data-subject="HTML">
+                <h3>HTML: Tạo bảng</h3>
+                <p>Viết mã HTML để tạo một bảng với ít nhất 3 hàng và 3 cột, bao gồm các tiêu đề bảng.</p>
+                <button class="detail-btn">Chi tiết</button>
+            </div>
+        </div>
+
+        <div id="searchResults"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 Trang Hỗ Trợ Giảng Dạy Lập Trình Cơ Bản</p>
+    </footer>
+
+    <script src="luyen-tap.js"></script> <!-- Link to external JS -->
+</body>
+</html>

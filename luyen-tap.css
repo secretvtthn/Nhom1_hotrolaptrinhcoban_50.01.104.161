@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003399;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #0055cc;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.subject-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subject-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.subject-btn:hover {
+    background-color: #0056b3;
+}
+
+.exercise-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.exercise {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise h3 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.exercise p {
+    font-size: 1.05em;
+    color: #555;
+    flex-grow: 1;
+}
+
+.html-exercise {
+    background-color: #f8d7da;
+}
+
+.algorithm-exercise {
+    background-color: #d1ecf1;
+}
+
+.cpp-exercise {
+    background-color: #c3e6cb;
+}
+
+.python-exercise {
+    background-color: #fff3cd;
+}
+
+.js-exercise {
+    background-color: #d6d8d9;
+}
+
+.exercise .detail-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.exercise .detail-btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#searchResults {
+    margin-top: 20px;
+    color: red;
+}

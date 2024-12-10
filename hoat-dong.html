@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Chấm Bài Tự Động</title>
+    <link rel="stylesheet" href="hoat-dong.css">
+</head>
+<body>
+    <header>
+        <h1>Sự Kiện</h1>
+        <nav>
+            <li><a href="Trang_Web_Chinh.html">Trang chủ</a></li>
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="tai-lieu.html">Tài liệu</a></li>
+            <li><a href="hoat-dong.html">Hoạt động</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div class="filter-section">
+                <input type="text" id="searchInput" placeholder="Tên kỳ thi" />
+                <button onclick="search()">Tìm kiếm</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+
+            <div class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">STT</th>
+                            <th onclick="sortTable(1)">Tên kỳ thi</th>
+                            <th onclick="sortTable(2)">Thời gian bắt đầu</th>
+                            <th onclick="sortTable(3)">Thời gian</th>
+                            <th>Trạng thái</th>
+                            <th>Tác vụ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="examList">
+                        <!-- Dữ liệu sẽ được thêm bằng JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="examDetails" class="details-section">
+                <h3>Chi tiết kỳ thi</h3>
+                <p id="examDetailsContent"></p>
+                <button onclick="closeDetails()">Đóng</button>
+            </div>
+        </main>
+    </div>
+    <script src="hoat-dong.js"></script>
+</body>
+</html>
